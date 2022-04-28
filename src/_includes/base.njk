@@ -10,8 +10,16 @@
 
   <body>
     <header>
-      <h1>{{ title }}</h1>
+      {{ title }}
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/ua">Universal Analytics</a>
+        <a href="/ga4">Google Analytics 4</a>
+        <a href="/dualtagging">Dual Tagging</a>
+      </nav>
     </header>
+
     <main>
       {{ content | safe }}
     </main>
