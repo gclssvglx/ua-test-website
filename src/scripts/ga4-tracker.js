@@ -6,5 +6,5 @@ function gtag() {
 }
 
 gtag('js', new Date())
-gtag('config', 'G-123456789-0') // send pageview
+gtag('config', 'G-Z7JXZZWPGW') // send pageview
 // End Google Analytics 4 Tracker
