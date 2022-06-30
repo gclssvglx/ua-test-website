@@ -4,12 +4,6 @@ function handleLinkClick(event) {
   event.preventDefault();
 }
 
-function handleVirtualPageview(event) {
-  var button = event.target.closest('button');
-  ga('send', 'pageview', 'Button ' + button.getAttribute('id') + ' was clicked')
-  event.preventDefault();
-}
-
 function handleFormSubmit(event) {
   var form = event.target.closest('form');
   var inputs = form.getElementsByTagName('input');

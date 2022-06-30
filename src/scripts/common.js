@@ -4,11 +4,6 @@ window.onload = function (event) {
     elements[i].addEventListener('click', handleLinkClick);
   }
 
-  var buttons = document.getElementsByClassName('virtual-pageview');
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', handleVirtualPageview);
-  }
-
   var form = document.getElementById('form-one');
   form.addEventListener('submit', handleFormSubmit);
 }

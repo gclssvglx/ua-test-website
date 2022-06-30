@@ -10,17 +10,6 @@ function handleLinkClick(event) {
   event.preventDefault();
 }
 
-function handleVirtualPageview(event) {
-  var button = event.target.closest('button');
-  ga('send', 'pageview', 'Button ' + button.getAttribute('id') + ' was clicked')
-  gtag('event', 'pageview', {
-    'event_category': 'button',
-    'event_label': button.getAttribute('id'),
-    'send_to': 'ga4'
-  });
-  event.preventDefault();
-}
-
 function handleFormSubmit(event) {
   var form = event.target.closest('form');
   var inputs = form.getElementsByTagName('input');
